@@ -1,9 +1,0 @@
-Python-Logic-Lab/
-│
-├── README.md
-├── .gitignore
-│
-└── Data-Type-Playground/
-    ├── README.md
-    ├── student_info.py
-    └── concert_ticket_booker.py
