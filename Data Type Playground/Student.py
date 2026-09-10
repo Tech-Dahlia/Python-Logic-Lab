@@ -13,3 +13,9 @@ months = age * 12
 
 print( f"Welcome, {First_name.upper()} {Surname.title()}, you have lived for {months} months thus far. Could your favourite number be {Favourite_Number:.2f}? when rounded to two decimal places.   "  )
 
+#Showing off data type knowledge
+print(f"\nSystem Logs: Data Types")
+print(f" Name: {type(First_name)}")
+print(f" Age: {type(age)}")
+print(f" Fav_Num: {type(Favourite_Number)}")
+print(f" Months Lived: {type(months)}")
