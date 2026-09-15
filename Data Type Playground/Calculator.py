@@ -1,9 +1,9 @@
-###
+"""
 Project: Basic smart Calculator 2.0 
 Author: Dahlia Mphalo 
 Description: A Python-based calculator that performs basic arithmetic with a user-controlled rounding feature. 
 Demonstrates mastery of conditional logic (if/elif/else) and string sanitization (.strip(), .lower())
-###
+"""
 
 
 # Define calculator options
