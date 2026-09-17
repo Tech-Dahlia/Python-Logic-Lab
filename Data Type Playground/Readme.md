@@ -5,7 +5,7 @@ A collection of fundamental Python exercises exploring core data types, user inp
 # Files/Folders/Sub Folders shall be curated as I go/grow along depending wether creativity/Imagination or how far I level up... 
 - `student.py` – Collects personal info and displays a formatted profile card
 - `Calculator.py` - Smart Arithmetic Engine. A script showcasing data casting, arithmetic operations, and user-choice logic with decimal rounding.
-- `concert_ticket_booker.py` – A digital ticket counter that confirms bookings
+- `Ticketbreeze.py` – A digital ticket counter that confirms bookings fairly
 
 ## Skills Demonstrated
 - Data Types: Strings, Integers, Floats
