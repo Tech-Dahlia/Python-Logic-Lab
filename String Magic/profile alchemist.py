@@ -1,7 +1,7 @@
 """
 Project: String Alchemy - A Text-Processing Engine
 Author: Dahlia Mphalo
-Description: This script A backend simulation that transforms raw user input into sanitized profile data. 
+Description: This script is a backend simulation that transforms raw user input into sanitized profile data. 
              Demonstrates string manipulation, username generation, and dynamic f-string formatting.
 """
 
