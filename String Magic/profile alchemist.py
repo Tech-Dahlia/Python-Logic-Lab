@@ -1,19 +1,27 @@
 """
-Project: Student Information Profile Card
+Project: String Alchemy - A Text-Processing Engine
 Author: Dahlia Mphalo
-Description: This script .
+Description: This script is a  text-processing engine that transforms raw user input into sanitized profile data. 
+             Demonstrates advanced string manipulation, username generation logic, and dynamic f-string formatting.
 """
 
-first_name = input("Enter your first name: " ).strip()
-last_name = input("Enter your last name: " ).strip()
-bio = input("Please Enter a short description about yourself" ).strip()
+# 1. Collecting and "Stripping" raw input
+first_name = input("Enter your first name: ").strip()
+last_name = input("Enter your last name: ").strip()
+bio = input("Please enter a short bio: ").strip()
 
-Username = first_name[0].lower() + last_name.lower()
-Full_name = first_name.title() + " " + last_name.title()
+# 2. The Transformation Magic
+# Creating a username (first initial + last name)
+username = (first_name[0] + last_name).lower()
+full_name = f"{first_name.title()} {last_name.title()}"
 
-bio = bio.replace("I am", "I'm")
-bio_characters = len(bio)
+# Refining the bio
+refined_bio = bio.replace("I am", "I'm")
+bio_characters = len(refined_bio)
 
+# 3. The Polished Output
+print(f"\n--- ✨ User Profile Generated ✨ ---")
 print(f" hi, welcome your first name is {first_name} and your last name is {last_name}, ")
-print( f" Meaning your username is {Username} and your full name is {Full_name}. ")
-print(f"Your bio has {bio_characters} characters.")
+print(f" Meaning your username on the system {username} and your full name is {full_name}. ")
+print(f" Refined Bio: \"{refined_bio}\"")
+print(f" Your new bio has {bio_characters} characters.")
