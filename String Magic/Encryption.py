@@ -1,12 +1,14 @@
 """
-Project: 
+Project:Secure Password Hint Tool
 Author: Dahlia Mphalo
-Description: 
+Description: Asks the user for a password, strips extra spaces, and prints a hint showing the first and last letters
+             in uppercase
 """
 
 Password = input("Please Enter your password ").strip()
 
-hint = print( f"your passwrord starts with {Password[0].upper()} and ends with {Password[-1].upper() }" )
+hint =  f"your passwrord starts with {Password[0].upper()} and ends with {Password[-1].upper() }"
+print( hint)
 
-print(f"DEBUG: hint = {hint}")
-print(f"DEBUG: type of hint = {type(hint)}")
+
+
