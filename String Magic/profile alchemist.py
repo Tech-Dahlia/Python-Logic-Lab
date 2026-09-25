@@ -20,7 +20,7 @@ refined_bio = bio.replace("I am", "I'm")
 bio_characters = len(refined_bio)
 
 # 3. The Polished Output
-print(f"\n--- ✨ User Profile Generated ✨ ---")
+print(f"\n--- User Profile Generated  ---")
 print(f" hi, welcome your first name is {first_name} and your last name is {last_name}, ")
 print(f" Meaning your username on the system {username} and your full name is {full_name}. ")
 print(f" Refined Bio: \"{refined_bio}\"")
