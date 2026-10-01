@@ -11,8 +11,8 @@ Description:  Building a command-line contact book called contact_book.py that s
  #       tupleS = made in brackets and a fullstop at the end ()
  #  ===============
 
-contacts = { 
-    'Name:' 'Alice', 'phone_number:' '123-456-7890', ' email: 'coconut@.com' 
-    'Name:' 'Bob', 'phone_number:' '987-654-3210', ' email: 'bob@.com'
-    'Name:' 'Charlie', 'phone_number:' '555-555-5555', ' email: 'charlie@.com'
-}
+contacts = [
+    {"name": "Alice",   "phone": "123-456-7890", "email": "alice@example.com"},
+    {"name": "Bob",     "phone": "987-654-3210", "email": "bob@example.com"},
+    {"name": "Charlie", "phone": "555-555-5555", "email": "charlie@example.com"},
+]
