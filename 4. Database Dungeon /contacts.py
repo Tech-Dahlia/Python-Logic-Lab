@@ -13,13 +13,6 @@ Description:  A command-line contact book that stores contacts as a list of dict
 #   Tuples       = ( , )     ordered, unchangeable (immutable).   and The comma is what creates a tuple, not the brackets. edd x(1, 2, 3 )
 #  ===============
 
-contacts = [
-    {"name": "Alice",   "phone": "123-456-7890", "email": "alice@example.com"},
-    {"name": "Bob",     "phone": "987-654-3210", "email": "bob@example.com"},
-    {"name": "Charlie", "phone": "555-555-5555", "email": "charlie@example.com"},
-]
-
-
 # A list of dictionaries. Each dictionary is one contact.
 # Every contact has exactly three keys: name, phone, email.
 contacts = [
