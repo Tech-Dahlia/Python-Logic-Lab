@@ -17,14 +17,14 @@ Balance = int(1000.00)
 Withdrawal = int(input("Enter the amount you'd like to withdraw: ")) #int because the ATM withdraws in whole number 
 deposit = int(input("Please enetr the amount you'd lijke to deposit: "))
 
-Balance_left  = int (Balance - Withdrawal)
+Balance  = int (Balance - Withdrawal)
 amount_deposited = int (Balance + deposit)
 
-if Withdrawal <= 0
-    print("Amount needs to be more that R 0 and as whole values )
+if Withdrawal <= 0:
+    print("Amount needs to be more that R 0 and as whole values")
           
 elif Withdrawal <= Balance: 
-    print (f" Withdrawal successful! Please collect your money R {Withdrawal} Remaining balance: {Balance_left} " )
+    print (f" Withdrawal successful! Please collect your money R {Withdrawal} Remaining balance: {Balance} " )
 
 elif Withdrawal > Balance:
     print (f"Insufficient funds your current Balance is R {Balance} please withdraw woithin the range ")
