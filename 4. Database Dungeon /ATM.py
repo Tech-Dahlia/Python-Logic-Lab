@@ -12,25 +12,20 @@ Description:  Simulate a bank transaction checking
 #   Tuples       = ( , )     ordered, unchangeable (immutable).   and The comma is what creates a tuple, not the brackets. edd x(1, 2, 3 )
 #  ===============
 
+
 Balance = int(1000.00)
 
 Withdrawal = int(input("Enter the amount you'd like to withdraw: ")) #int because the ATM withdraws in whole number 
-deposit = int(input("Please enetr the amount you'd lijke to deposit: "))
 
-Balance  = int (Balance - Withdrawal)
-amount_deposited = int (Balance + deposit)
 
 if Withdrawal <= 0:
     print("Amount needs to be more that R 0 and as whole values")
           
 elif Withdrawal <= Balance: 
+    Balance = Balance - Withdrawal
     print (f" Withdrawal successful! Please collect your money R {Withdrawal} Remaining balance: {Balance} " )
 
-elif Withdrawal > Balance:
+else:
     print (f"Insufficient funds your current Balance is R {Balance} please withdraw woithin the range ")
 
-elif Balance <= 0:
-    print ("Your account is empty, please deposit money to continue using the ATM") 
-
-else:
-    print (“Declined Insufficient funds”)
+    print("Declined. Insufficient funds")
