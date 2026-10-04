@@ -30,9 +30,4 @@ elif Balance <= 0:
     print ("Your account is empty, please deposit money to continue using the ATM") 
 
 else:
-    print (“Seclined Insufficient funds”)
-
-else:
-    print (“ Declined, Insufficient funds”)
- 
-
+    print (“Declined Insufficient funds”)
