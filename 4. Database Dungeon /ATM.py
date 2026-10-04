@@ -13,19 +13,20 @@ Description:  Simulate a bank transaction checking
 #  ===============
 
 
-Balance = int(1000.00) 
+Balance = int(1000.00) # int because i want the ATM to withdraw in whole number asinput() always returns a string.
 
 Withdrawal = int(input("Enter the amount you'd like to withdraw: ")) #int because the ATM withdraws in whole number 
 
 
-if Withdrawal <= 0:
+if Withdrawal <= 0: #is the amount invalid? (zero or negative) Checked FIRST because bad input must never reach the balance.
     print("Amount needs to be more that R 0 and as whole values")
           
-elif Withdrawal <= Balance: 
+elif Withdrawal <= Balance:     #The deduction lives INSIDE this branch on purpose Before the fix, it sat above the if-statement and destroyed
+                                # the balance even when the withdrawal failed
     Balance = Balance - Withdrawal
     print (f" Withdrawal successful! Please collect your money R {Withdrawal} Remaining balance: {Balance} " )
 
-else:
-    print (f"Insufficient funds your current Balance is R {Balance} please withdraw woithin the range ")
+else:  #Using 'else' instead of 'elif Withdrawal > Balance' because by elimination, this is the only remaining case.
+    print (f"Declined. Insufficient funds your current Balance is R {Balance} please withdraw woithin the range ") 
+     # One clear message for print above is better than two repeating the same idea.
 
-    print("Declined. Insufficient funds")
