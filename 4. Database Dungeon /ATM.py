@@ -13,7 +13,7 @@ Description:  Simulate a bank transaction checking
 #  ===============
 
 
-Balance = int(1000.00)
+Balance = int(1000.00) 
 
 Withdrawal = int(input("Enter the amount you'd like to withdraw: ")) #int because the ATM withdraws in whole number 
 
