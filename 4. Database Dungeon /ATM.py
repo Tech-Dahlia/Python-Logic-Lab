@@ -17,17 +17,20 @@ Balance = int(1000.00)
 Withdrawal = int(input("Enter the amount you'd like to withdraw: ")) #int because the ATM withdraws in whole number 
 deposit = int(input("Please enetr the amount you'd lijke to deposit: "))
 
-amount_withdrawn  = int (Balance - Withdrawal)
-amount_deposited = (Balance + Withdrawal)
+Balance_left  = int (Balance - Withdrawal)
+amount_deposited = int (Balance + deposit)
 
 if Withdrawal <= Balance: 
-    print (f" Withdrawal successful! Please collect your money R {Withdrawal} Remaining balance: {amount_withdrawn} " )
+    print (f" Withdrawal successful! Please collect your money R {Withdrawal} Remaining balance: {Balance_left} " )
 
 elif withdrawal > Balance:
     print (f"Insufficient funds your current Balance is R {Balance} please withdraw woithin the range ")
 
 elif Balance <= 0:
     print ("Your account is empty, please deposit money to continue using the ATM") 
+
+else:
+    print (“Seclined Insufficient funds”)
 
 else:
     print (“ Declined, Insufficient funds”)
