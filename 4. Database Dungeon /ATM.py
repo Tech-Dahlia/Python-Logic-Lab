@@ -20,10 +20,13 @@ deposit = int(input("Please enetr the amount you'd lijke to deposit: "))
 Balance_left  = int (Balance - Withdrawal)
 amount_deposited = int (Balance + deposit)
 
-if Withdrawal <= Balance: 
+if Withdrawal <= 0
+    print("Amount needs to be more that R 0 and as whole values )
+          
+elif Withdrawal <= Balance: 
     print (f" Withdrawal successful! Please collect your money R {Withdrawal} Remaining balance: {Balance_left} " )
 
-elif withdrawal > Balance:
+elif Withdrawal > Balance:
     print (f"Insufficient funds your current Balance is R {Balance} please withdraw woithin the range ")
 
 elif Balance <= 0:
