@@ -1,7 +1,8 @@
 """
 Project: Automated Teller Machine (ATM) Simulation
 Author:  Dahlia Mphalo
-Description:  Simulate a bank transaction checking 
+Description:  Simulates an ATM withdrawal. Checks that the requested amount is valid and does not exceed the balance, then updates the
+              balance and prints the outcome.
 
 """
 
