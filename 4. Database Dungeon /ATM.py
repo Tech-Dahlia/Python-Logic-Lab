@@ -26,7 +26,7 @@ if Withdrawal <= Balance:
 elif withdrawal > Balance:
     print (f"Insufficient funds your current Balance is R {Balance} please withdraw woithin the range ")
 
-if Balance <= 0:
+elif Balance <= 0:
     print ("Your account is empty, please deposit money to continue using the ATM") 
 
 else:
