@@ -6,3 +6,20 @@ Description: A Python program that collects a learner's name and marks for  thre
              any subject mark below 40 as 'needs intervention', and displays
              a formatte
 """
+
+Name = input("What's your name? ")
+
+
+
+Subject1 = float(input("Enter your mark for Subject 1: "))
+Subject1_total = float(input("Enter the total marks for Subject 1: "))
+
+Subject2 = float(input("Enter your mark for Subject 2: "))
+Subject2_total = float(input("Enter the total marks for Subject 2: "))
+
+Subject3 = float(input("Enter your mark for Subject 3: "))
+Subject3_total = float(input("Enter the total marks for Subject 3: "))
+
+
+
+Average_mark = (Subject1 + Subject2 + Subject3) / 3
