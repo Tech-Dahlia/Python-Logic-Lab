@@ -7,10 +7,11 @@ Description: A Python program that collects a learner's name and marks for  thre
              a formatte
 """
 
+# code intro
 Name = input("What's your name? ")
 
 
-
+#Introducung how we will work on the calculations
 Subject1 = float(input("Enter your mark for Subject 1: "))
 Subject1_total = float(input("Enter the total marks for Subject 1: "))
 
@@ -21,19 +22,21 @@ Subject3 = float(input("Enter your mark for Subject 3: "))
 Subject3_total = float(input("Enter the total marks for Subject 3: "))
 
 
+
 Average_mark = (Subject1 + Subject2 + Subject3) / 3
 
 #Now how our code will reason
 if Average_mark >= 50:
     print("STATUS: passed!")
-elif:
+
+elif Average_mark < 50:
     print("STATUS: failed!")
 
-else Average_mark <= 40]:
+elif Average_mark <= 40:
     print("You need intervention!")
 
 
-if Average_mark >= 80:
+elif Average_mark >= 80:
     print("GRADE A")
     print("You're cum Laude!")
 
