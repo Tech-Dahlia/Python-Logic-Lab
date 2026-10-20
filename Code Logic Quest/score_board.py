@@ -10,3 +10,10 @@ while True:
 if cleaned == 'stop':
     print:("Game session ended!")
      break
+
+#the extra stuff 
+score = int(cleaned)
+    if score > 100:
+        print("Wow! That's a new high score!")
+    else:
+        print("Good try, keep playing!")
