@@ -12,7 +12,7 @@ while True:
     print(f"You entered: {score}")
 
     if cleaned == 'stop':
-        print:("Game session ended!")
+        print("Game session ended!")
         break
 
 #the extra stuff 
