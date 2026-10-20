@@ -1,59 +1,65 @@
 """
 Project: Code Logic - Student Grade Classifier
 Author: Dahlia Mphalo
-Description: A Python program that collects a learner's name and marks for  three subjects, 
-             calculates the average, assigns a letter grade(A/B/C/D/F) and a Pass/Fail status using conditionals, flags
+Description: A Python program that collects a learner's name and marks for
+             three subjects, calculates the average, assigns a letter grade
+             (A/B/C/D/F) and a Pass/Fail status using conditionals, flags
              any subject mark below 40 as 'needs intervention', and displays
-             a formatte
+             a formatted report card.
 """
 
-# code intro
-Name = input("What's your name? ")
+# Input: Code intro 
+name = input("What's your name? ")
 
+subject1 = float(input("Enter your mark for Subject 1: "))
+subject2 = float(input("Enter your mark for Subject 2: "))
+subject3 = float(input("Enter your mark for Subject 3: "))
 
-#Introducung how we will work on the calculations
-Subject1 = float(input("Enter your mark for Subject 1: "))
-Subject1_total = float(input("Enter the total marks for Subject 1: "))
+# Average: Introducung how we will work on the calculations 
+Average_mark = (subject1 + subject2 + subject3) / 3
 
-Subject2 = float(input("Enter your mark for Subject 2: "))
-Subject2_total = float(input("Enter the total marks for Subject 2: "))
-
-Subject3 = float(input("Enter your mark for Subject 3: "))
-Subject3_total = float(input("Enter the total marks for Subject 3: "))
-
-
-
-Average_mark = (Subject1 + Subject2 + Subject3) / 3
-
-#Now how our code will reason
-if Average_mark >= 50:
-    print("STATUS: passed!")
-
-elif Average_mark < 50:
-    print("STATUS: failed!")
-
-elif Average_mark <= 40:
-    print("You need intervention!")
-
-
-elif Average_mark >= 80:
-    print("GRADE A")
-    print("You're cum Laude!")
-
+# Grade arranged from highest → lowest
+if Average_mark >= 80:
+    grade = "A"
 elif Average_mark >= 70:
-    print("GRADE B")
-    print("You've achieved a distinction!")
-
+    grade = "B"
 elif Average_mark >= 60:
-    print("GRADE C")
-    print("You've passed with merit!")
-
+    grade = "C"
 elif Average_mark >= 50:
-    print("GRADE D")
-    print("You've barely passed!")
-
+    grade = "D"
 else:
-    print("GRADE F")
-    print("Come on now :(!")
+    grade = "F"
 
-print(f"Your average mark is: {Average_mark}%")
+# Status is separate decision from grade
+if Average_mark >= 50:
+    status = "PASSED"
+else:
+    status = "FAILED"
+
+# Intervention flags (check each subject individually
+interventions = []
+if subject1 < 40:
+    interventions.append("Subject 1")
+if subject2 < 40:
+    interventions.append("Subject 2")
+if subject3 < 40:
+    interventions.append("Subject 3")
+
+# --- Report card ---
+print("\n" + "=" * 40)
+print(f"       REPORT CARD — {name}")
+print("=" * 40)
+print(f"Subject 1: {subject1:>6.2f}")
+print(f"Subject 2: {subject2:>6.2f}")
+print(f"Subject 3: {subject3:>6.2f}")
+print("-" * 40)
+print(f"Average:   {Average_mark:>6.2f}%")
+print(f"Grade:     {grade}")
+print(f"Status:    {status}")
+
+if interventions:
+    print(f" Needs intervention in: {', '.join(interventions)}")
+else:
+    print("No intervention needed.")
+
+print("=" * 40)
