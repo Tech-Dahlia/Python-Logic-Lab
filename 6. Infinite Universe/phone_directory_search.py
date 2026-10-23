@@ -7,8 +7,8 @@ Description: A mini data directory program that stores 3 friends and their phone
 """
 
 # Adding a key Value dictionary 
-contacts = { "Amanda": "0821112222" 
-             "Brian": "0832223333"
+contacts = { "Amanda": "0821112222" ,
+             "Brian": "0832223333" ,
              "Catherine": "0843334444" }
 
 # Giving user access/ flexibility to serach contact list insted of having to manually search
